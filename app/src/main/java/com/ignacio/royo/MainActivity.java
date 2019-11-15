@@ -20,5 +20,9 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
-
+    public void irActivityTres(View view) {
+        Intent intent = new Intent(MainActivity.this, Activity3.class);
+        startActivity(intent);
+        finish();
+    }
 }
