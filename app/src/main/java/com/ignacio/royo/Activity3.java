@@ -25,10 +25,19 @@ public class Activity3 extends AppCompatActivity {
     }
 
 
-    public void getAction(View view) {
+    public void startService(View view) {
         action = (EditText) findViewById(R.id.editText);
-        String data = action.getText().toString();
+        String data = "0";
+        if (!action.getText().toString().isEmpty()) {
+             data = action.getText().toString();
+        }
         int in = Integer.parseInt(data);
+        if (action == null){
+            in = 0;
+        }
+        if(in>2){
+            Toast.makeText(getApplicationContext(),"Error el número introducido no es valido: "+data , Toast.LENGTH_SHORT).show();
+        }
         Intent intent = new Intent(this, MyReceiver.class);
         intent.putExtra(code, in);
         sendBroadcast(intent);
@@ -42,5 +51,10 @@ public class Activity3 extends AppCompatActivity {
     }
 
 
-
+    public void stoptService(View view) {
+        int in = 1;
+        Intent intent = new Intent(this, MyReceiver.class);
+        intent.putExtra(code, in);
+        sendBroadcast(intent);
+    }
 }

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">IGNACIO_ROYO_M08_PAC_DESAROLLO</string>
     <string name="tituloHome">Minion World</string>
+    <string name="textInput">Intoduce 0 para reproducir, 1 para parar y 2 para bloquear la aplicación</string>
+    <string name="button4">Parar</string>
+    <string name="button3">Empezar</string>
+    <string name="home">Home</string>
 </resources>

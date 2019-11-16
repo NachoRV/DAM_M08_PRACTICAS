@@ -20,11 +20,6 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        /*try {
-            Thread.sleep(150000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
 
         if (player != null && player.isPlaying()) {
             player.stop();

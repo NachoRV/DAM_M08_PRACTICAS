@@ -43,7 +43,7 @@ public class MyReceiver extends BroadcastReceiver {
                         case 1:
                             context.stopService(in);
                             break;
-                        case 3:
+                        case 2:
                             try {
                                 Thread.sleep(150000);
                             } catch (InterruptedException e) {

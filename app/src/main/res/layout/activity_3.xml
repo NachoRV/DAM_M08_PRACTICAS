@@ -6,13 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Activity3">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="354dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/minions_cantando" />
+
     <Button
         android:id="@+id/home"
         android:layout_width="90dp"
         android:layout_height="49dp"
         android:layout_marginTop="48dp"
         android:onClick="home"
-        android:text="Home"
+        android:text="@string/home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +39,7 @@
         android:layout_marginBottom="69dp"
         android:ems="10"
         android:inputType="number"
+        android:maxLength="1"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home"
@@ -33,15 +47,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
         android:layout_marginStart="44dp"
         android:layout_marginBottom="22dp"
-        android:text="TextView"
+        android:text="@string/textInput"
         app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
+        app:layout_constraintVertical_bias="0.987" />
 
     <Button
         android:id="@+id/button3"
@@ -49,8 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginBottom="69dp"
-        android:text="Button"
-        android:onClick="getAction"
+        android:text="@string/button3"
+        android:onClick="startService"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/home"
@@ -63,7 +79,8 @@
         android:layout_marginStart="44dp"
         android:layout_marginEnd="44dp"
         android:layout_marginBottom="107dp"
-        android:text="Button"
+        android:text="@string/button4"
+        android:onClick="stoptService"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
