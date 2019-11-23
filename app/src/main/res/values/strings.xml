@@ -3,6 +3,9 @@
     <string name="tituloHome">Minion World</string>
     <string name="textInput">Intoduce 0 para reproducir, 1 para parar y 2 para bloquear la aplicación</string>
     <string name="button4">Parar</string>
-    <string name="button3">Empezar</string>
+    <string name="button3">Enviar</string>
     <string name="home">Home</string>
+    <string name="crearTabla">crear</string>
+    <string name="insertarDatos">insertar</string>
+    <string name="consultarDatos">Consultar</string>
 </resources>
